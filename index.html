@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Comienzo de nav-bar -->
+    <header id="header">
+      <div id="nombre">
+        <h1>KingPrints</h1>
+      </div>
+
+      <nav id="nav">
+        <ul id="lista">
+          <li id="nav__item"><a id="nav__link" href="">NOSOTROS</a></li>
+          <li id="nav__item"><a id="nav__link" href="">Productos</a></li>
+          <li id="nav__item"><a id="nav__link" href="">Contacto</a></li>
+          <li id="nav__item"><ion-icon name="cart-outline" size="large" class="icono-carrito"></ion-icon></li>
+          <input type="text" placeholder="Buscar productos" id="input" />
+          <button id="boton">Buscar</button>
+        </ul>
+      </nav>
+    </header>
+    <!-- Fin de nav-bar -->
+    <!-- Comienzo de primera seccion -->
+    <section class="seccion_uno">
+      <div class="contenedor-texto">
+        <h2 class="titulo">NOSOTROS</h2>
+        <h3 class="subtitulo">
+          Somos King Prints; un proyecto iniciado en 2020 por Guido Ciocco,
+          quien decidió explorar el mundo de la impresión 3D. Un año después, se
+          sumaría al proyecto el diseñador industrial Francisco Russo para
+          aportar desarrollos propios y más profundos de cara a la
+          materialización de productos junto con la resolución de problemáticas
+          de diseño.
+        </h3>
+        <a href="" class="cta">Conoce nuestros productos</a>
+      </div>
+      <div class="contenedorImagen">
+        <img src="./imagenes/logoking.png" class="ilustracion1" alt="" />
+      </div>
+    </section>
+    <!-- Fin de primera seccion -->
+
+    <!-- Comienzo de carrito -->
+    <div id="compras">
+        <h2 class="titulo-carrito">Tu carrito</h2>
+        <div class="contenido-carrito">
+            </div>
+            <div class="total">
+                <div class="titulo-final">Total</div>
+                <div class="precio-final">$0</div>
+            </div>
+            <button class="boton-compra">Comprar 😀</button>
+            <ion-icon name="close-circle-outline" id="boton-cerrar"></ion-icon>
+        </div>
+    </div>
+    <!-- Fin de carrito -->
+
+    <!-- Comienzo de segunda seccion -->
+    <section class="contenedor-shop">
+        <h2 class="titulo-shop">PRODUCTOS</h2>
+        <div class="contenido-shop">
+            <div class="caja-producto">
+                <img src="./imagenes/darthVader.png" alt="" class="foto">
+                <h2 class="titulo-producto">Darth Vader</h2>
+                <span class="precio">$800</span>
+                <ion-icon name="cart-outline" class="carrito" size="large"></ion-icon>
+            </div>
+            <div class="caja-producto">
+                <img src="./imagenes/Snitch.png" alt="" class="foto">
+                <h2 class="titulo-producto">Snitch Dorada</h2>
+                <span class="precio">$500</span>
+                <ion-icon name="cart-outline" class="carrito" size="large"></ion-icon>
+            </div>
+            <div class="caja-producto">
+                <img src="./imagenes/Banshe.png" alt="" class="foto">
+                <h2 class="titulo-producto">Set Gamer</h2>
+                <span class="precio">$2500</span>
+                <ion-icon name="cart-outline" class="carrito" size="large"></ion-icon>
+            </div>
+            <div class="caja-producto">
+                <img src="./imagenes/Naruto.png" alt="" class="foto">
+                <h2 class="titulo-producto">Llaveros</h2>
+                <span class="precio">$200</span>
+                <ion-icon name="cart-outline" class="carrito" size="large"></ion-icon>
+            </div>
+        </div>
+    </section>
+    <!-- Fin de segunda seccion -->
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

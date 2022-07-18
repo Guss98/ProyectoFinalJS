@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(./imagenes/pexels-adrien-olichon-2387532.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: white;
+}
+/* Estilos de nav-bar */
+#header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  padding: 0 0;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+#lista {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#nav__item {
+  margin: 0 8px;
+}
+
+#nav__link {
+  padding: 10px;
+  color: white;
+
+  font-size: 1.25rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.icono-carrito {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+input {
+    margin: 0 8px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#boton {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  height: 30px;
+  width: 80px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+#boton:disabled {
+  pointer-events: none;
+}
+
+#boton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#boton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/* Fin de estilos de nav-bar */
+
+/* Estilos de primera seccion */
+.seccion_uno {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contenedor-texto{
+    flex-basis: 50%;
+    padding-left: 40px;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1;
+    text-transform: uppercase;
+  }
+  
+  .subtitulo {
+    font-size: 1.3rem;
+    margin: 20px 0;
+  }
+
+.cta{
+    display: inline-block;
+  width: 300px;
+  height: 70px;
+  padding: 8px 0;
+  text-align: center;
+  background: white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.cta:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.contenedorImagen {
+    flex-basis: 50%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .ilustracion1 {
+    height: 200px;
+    width: 150px;
+    border-radius: 5%;
+  }
+  /* Fin de estilos de primera seccion  */
+
+/* Estilos del carrito de compras */
+#compras {
+    position: fixed;
+    top: 10%;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: white;
+    box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+    z-index: 100;
+    transition: .3s;
+}
+
+#compras.active {
+    right: 0;
+}
+
+.titulo-carrito {
+    text-align: center;
+    color: #1A1A1A;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.caja-carrito{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.carrito-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detalles-carrito {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.titulo-prod{
+    font-size: 1rem;
+}
+
+.precio-prod {
+    font-weight: 600;
+}
+
+.cantidad {
+    border: 1px solid black;
+    outline-color: red;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tacho {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.tacho:hover {
+    color: red;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+
+.titulo-final {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.precio-final {
+    margin-left: 0.5rem;
+}
+
+
+.boton-compra {
+    display: flex;
+    margin: 1.5rem;
+    padding: 12px 20px;
+    border: none;
+    background: black;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.boton-compra:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+#boton-cerrar {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#boton-cerrar:hover {
+    color: red;
+}
+
+/* Fin estilos de carrito */
+
+/* Estilos de segunda seccion */
+.contenedor-shop {
+    align-items: center;
+    padding: 4rem 0 3rem;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+.titulo-shop {
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.contenido-shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,auto));
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.foto {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 0.5rem;
+}
+
+.caja-producto{
+    padding: 10px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.caja-producto:hover {
+    padding: 5px;
+    border: 1px solid white;
+    transition: .4s;
+}
+
+.titulo-producto {
+    color: white;
+}
+
+.precio{
+    color: white;
+    font-weight: bold;
+}
+
+.carrito {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: white;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
