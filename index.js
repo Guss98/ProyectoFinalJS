@@ -63,15 +63,12 @@ function sumarAlCarrito(titulo, costo, foto){
     boxCarrito.classList.add('estiloCarrito');
     var cartItems= document.getElementsByClassName('contenido-carrito')[0];
     var nombreCartItems = cartItems.getElementsByClassName('titulo-prod');
-    for (var i = 0; i < nombreCartItems.length; i++){
-        alert('Este producto ya esta sumado a la lista');
-    }
     var contenidoBox = `<div class="caja-carrito">
-                    <img src="./imagenes/carritoVacio.png" class="carrito-img" alt="">
+                    <img src="${foto}" class="carrito-img" alt="">
                     <div class="detalles-carrito">
-                    <div class="titulo-prod"></div>
-                    <div class="precio-prod">$25</div>
-                    <input type="number" value="0" class="cantidad">
+                    <div class="titulo-prod">${titulo}</div>
+                    <div class="precio-prod">${costo}</div>
+                    <input type="number" value="1" class="cantidad">
                     </div>
                     <ion-icon name="trash-outline" class="tacho"></ion-icon></div>`;
 
@@ -100,11 +97,12 @@ function actualizar (){
         var precio = parseFloat(precioElemento.innerText.replace('$', ''));
         var cantidad = cantidadElementos.value;
         total = total + (precio * cantidad);
+    }
         total = Math.round(total*100)/100;
 
         document.getElementsByClassName('precio-final')[0].innerText = '$' + total;
     }
-}
+
 
 
 //Abre y cierra el carrito
