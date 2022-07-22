@@ -1,6 +1,18 @@
 let iconoCarrito = document.querySelector('.icono-carrito');
 let carrito = document.querySelector('#compras');
 let cerrarCarrito = document.querySelector('#boton-cerrar');
+let iconoNav = document.querySelector('#iconoNavbar');
+
+//Abrir y cerrar nav responsive
+
+function abrirCerrarNavbar () {
+    let lista = document.getElementById('lista');
+    iconoNavbar.onclick = () => {
+        lista.classList.toggle('show'); 
+    };
+};
+
+abrirCerrarNavbar();
 
 abrirCerrarCarrito();
 

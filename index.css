@@ -52,7 +52,6 @@ h1 {
 #nav__link {
   padding: 10px;
   color: white;
-
   font-size: 1.25rem;
   border-radius: 5px;
   position: relative;
@@ -114,7 +113,92 @@ input {
   box-shadow: none;
   transform: translateY(0);
 }
+
+
+
+ #iconoNavbar {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: none;
+  transition: all .5s;
+}
 /* Fin de estilos de nav-bar */
+
+/*Responsive */
+@media (max-width: 909px){
+
+  #iconoNavbar {
+    display: block;
+    color: white;
+  }
+
+  #lista{
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  #nav__item{
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  #nav__link{
+    font-size: 1.25rem;
+    color: black;
+  }
+
+  #input{
+    margin: -30px;
+  }
+
+  #boton{
+    margin-top: 40px;
+  }
+
+  #lista.show{
+    left: 0;
+  }
+
+  section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+}
+section img {
+    height: 25%;
+    margin-top: 200px;
+}
+section p {
+    font-size: 15px;
+    margin-left: 15%;
+}
+section h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+}
+section a {
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
+.contenedor-texto {
+    margin-bottom: 25px;
+}
+
+
+
+}
 
 /* Estilos de primera seccion */
 .seccion_uno {
@@ -369,3 +453,133 @@ input {
   overflow-x: hidden;
   height: 300px;
 }
+
+.seccion_dos {
+  height: 100%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.contenedor-texto2{
+  width: 40rem;
+  height: 20rem;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 3px -1px 46px -17px rgba(255,255,255,0.94);
+  -webkit-box-shadow: 3px -1px 46px -17px rgba(255,255,255,0.94);
+  -moz-box-shadow: 3px -1px 46px -17px rgba(255,255,255,0.94);
+}
+
+.titulo2{
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1;
+  text-transform: uppercase;
+}
+
+.subtitulo2{
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+
+.cta2{
+  display: inline-block;
+width: 300px;
+height: 70px;
+padding: 17px 0;
+text-align: center;
+background: white;
+border-radius: 5px;
+text-decoration: none;
+color: black;
+text-transform: uppercase;
+font-size: 1.25rem;
+font-family: "Poppins", sans-serif;
+font-weight: bold;
+}
+
+.cta2:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+/* Estilos del footer */
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagen_footer {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.redes, .menuFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.iconosRedes {
+height: 50px;
+width: 50px;
+border-radius: 50px;
+border: 1px solid black;
+background-image: url(./imagenes/logo-instagram.svg);
+background-position: center;
+background-size: 40%;
+background-repeat: no-repeat;
+margin: 1rem;
+}
+
+.iconosRedes:hover {
+  background-color: white;
+  filter: invert(1);
+}
+
+.iconosRedes:nth-of-type(2){
+  background-image: url(./imagenes/logo-tiktok.svg);
+}
+
+.iconosRedes:nth-of-type(3){
+  background-image: url(./imagenes/logo-whatsapp.svg);
+}
+
+.menuFooter {
+  list-style: none;
+  color: black;
+  font-size: 1.125rem;
+}
+
+.itemMenu{
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.itemMenu:hover{
+  opacity: 1;
+}
+
+.copyright{
+  color: black;
+  opacity: 0.3;
+  text-align: center;
+}
+
