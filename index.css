@@ -579,24 +579,25 @@ margin: 1rem;
 }
 .cta {
     margin-left: 40px;
-    margin-bottom: 15px;
+    
 }
 .contenedor-texto {
     
-    flex-basis: 30%;
-    overflow: visible;
+     /* flex-basis: 30%; */
+    /* overflow: visible; */
     width: 100%;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-left: -40px;
     text-align: center;
 }
 
+
 .contenedorImagen {
-  flex-basis: 10%;
+  flex-basis: 17%;
 }
 .ilustracion1 {
-  height: 100px;
-  width: 90px;
+  height: auto;
+  width: auto;
 }
 
 .contenedor-shop{
