@@ -177,11 +177,11 @@ input {
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 0px;
+    
 }
   .ilustracion1 {
-    height: 25%;
-    margin-top: 200px;
+    height: 120px;
+    margin-top: 40px;
 }
 .subtitulo {
     font-size: 15px;
@@ -199,6 +199,14 @@ input {
 }
 .contenedor-texto {
     margin-bottom: 25px;
+    flex-basis: 0;
+    overflow: visible;
+    width: 100%;
+}
+
+.contenedorImagen {
+  flex-basis: 0;
+
 }
 
 
