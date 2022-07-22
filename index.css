@@ -127,91 +127,7 @@ input {
 }
 /* Fin de estilos de nav-bar */
 
-/*Responsive */
-@media (max-width: 909px){
 
-  #iconoNavbar {
-    display: block;
-    color: white;
-  }
-
-  #lista{
-    position: fixed;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background: white;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  #nav__item{
-    display: block;
-    margin: 30px 0;
-    line-height: 30px;
-  }
-  #nav__link{
-    font-size: 1.25rem;
-    color: black;
-  }
-
-  .icono-carrito {
-    color: black;
-  }
-
-  #input{
-    margin: -30px;
-  }
-
-  #boton{
-    margin-top: 40px;
-  }
-
-  #lista.show{
-    left: 0;
-  }
-
-  .seccion_uno {
-    flex-direction: column-reverse;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    
-}
-  .ilustracion1 {
-    height: 120px;
-    margin-top: 40px;
-}
-.subtitulo {
-    font-size: 15px;
-    margin-left: 15%;
-}
-.titulo {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    text-align: center;
-}
-.cta {
-    margin-left: 30%;
-    margin-bottom: 15px;
-}
-.contenedor-texto {
-    margin-bottom: 25px;
-    flex-basis: 0;
-    overflow: visible;
-    width: 100%;
-}
-
-.contenedorImagen {
-  flex-basis: 0;
-
-}
-
-
-
-}
 
 /* Estilos de primera seccion */
 .seccion_uno {
@@ -596,3 +512,92 @@ margin: 1rem;
   text-align: center;
 }
 
+/*Responsive */
+@media (max-width: 909px){
+
+  #iconoNavbar {
+    display: block;
+    color: white;
+  }
+
+  #lista{
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  #nav__item{
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  #nav__link{
+    font-size: 1.25rem;
+    color: black;
+  }
+
+  .icono-carrito {
+    color: black;
+  }
+
+  #input{
+    margin: -30px;
+  }
+
+  #boton{
+    margin-top: 40px;
+  }
+
+  #lista.show{
+    left: 0;
+  }
+
+  .seccion_uno {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+  
+.subtitulo {
+    font-size: 15px;
+    text-align: center;
+   
+}
+.titulo {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.cta {
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
+.contenedor-texto {
+    
+    flex-basis: 30%;
+    overflow: visible;
+    width: 100%;
+    margin-top: -40px;
+    margin-left: -40px;
+}
+
+.contenedorImagen {
+  flex-basis: 25%;
+  margin-top: 15%;
+
+}
+.ilustracion1 {
+  height: 150px;
+  width: 130px;
+}
+
+
+}
