@@ -588,9 +588,16 @@ margin: 1rem;
 
 .contenedor-shop{
   width: 120%;
-  height: 130%;
 }
 
+.seccion_dos {
+  width: 120%;
+}
+
+
+.footer{
+  width: 120%;
+}
 
 }
 
