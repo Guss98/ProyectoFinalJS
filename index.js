@@ -10,6 +10,7 @@ function abrirCerrarNavbar () {
     iconoNavbar.onclick = () => {
         lista.classList.toggle('show'); 
     };
+    
 };
 
 abrirCerrarNavbar();

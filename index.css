@@ -586,6 +586,71 @@ margin: 1rem;
   height: 25%;
 }
 
+#compras{
+  width: 100%;
+  background-color: black;
+  z-index: 999;
+}
+
+.titulo-carrito{
+  color: white;
+}
+
+#boton-cerrar{
+  color: white;
+}
+
+.titulo-prod{
+  color: white;
+}
+
+.precio-prod {
+  color: white;
+}
+
+.cantidad {
+  border: 1px solid white;
+  outline-color: red;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.tacho {
+  color: white;
+}
+
+.tacho:hover {
+  color: red;
+}
+
+.total{
+  color: white;
+  border-top: 1px solid white;
+}
+
+.titulo-final {
+ color: white;
+}
+
+.precio-final {
+  color: white;
+}
+
+
+.boton-compra {
+  background: white;
+  color: black;
+}
+
+.boton-compra:hover {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+
+
 .contenedor-shop{
   width: 120%;
 }
