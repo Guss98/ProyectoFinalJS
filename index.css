@@ -595,11 +595,7 @@ margin: 1rem;
 }
 
 .contenido-shop {
-  display: grid;
- 
-  justify-items: center;
-  align-items: center;
-  gap: 1.5rem;
+ margin-left: -10%;
   
 }
 
