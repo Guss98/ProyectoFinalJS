@@ -594,6 +594,14 @@ margin: 1rem;
   width: 120%;
 }
 
+.contenido-shop {
+  display: grid;
+ 
+  justify-items: center;
+  align-items: center;
+  gap: 1.5rem;
+  
+}
 
 .footer{
   width: 120%;
