@@ -148,11 +148,13 @@ function actualizar (){
 function abrirCerrarCarrito() {
     iconoCarrito.onclick = () => {
         carrito.classList.add('active');
+        lista.classList.toggle('show');
     };
 
     cerrarCarrito.onclick = () => {
         carrito.classList.remove('active');
     };
+    
 }
 
 modificarElDOM();
@@ -178,6 +180,7 @@ boton.addEventListener("click", () => {
     } else {
       mostrarObjetoEncontrado(productoEncontrado);
     }
+    lista.classList.toggle('show');
   });
 
 divCreado.addEventListener('click', () => {

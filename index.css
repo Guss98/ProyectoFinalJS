@@ -690,7 +690,7 @@ margin: 1rem;
 
 #divCreado {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 66px;
   height: 80%;
   width: 100%;
