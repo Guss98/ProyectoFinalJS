@@ -24,9 +24,9 @@
 
       <nav id="nav">
         <ul id="lista">
-          <li id="nav__item"><a id="nav__link" href="">NOSOTROS</a></li>
-          <li id="nav__item"><a id="nav__link" href="">Productos</a></li>
-          <li id="nav__item"><a id="nav__link" href="">Contacto</a></li>
+          <li id="nav__item"><a id="nav__link" href="#nosotros">NOSOTROS</a></li>
+          <li id="nav__item"><a id="nav__link" href="#prod">Productos</a></li>
+          <li id="nav__item"><a id="nav__link" href="contacto.html" target="_blank">Contacto</a></li>
           <li id="nav__item"><ion-icon name="cart-outline" size="large" class="icono-carrito"></ion-icon></li>
           <input type="text" placeholder="Buscar productos" id="input" />
           <button id="boton">Buscar</button>
@@ -36,7 +36,7 @@
     <!-- Fin de nav-bar -->
     <!-- Comienzo de primera seccion -->
     <section class="seccion_uno">
-      <div class="contenedor-texto">
+      <div class="contenedor-texto"><a href="" id="nosotros"></a>
         <h2 class="titulo">NOSOTROS</h2>
         <h3 class="subtitulo">
           Somos King Prints; un proyecto iniciado en 2020 por Guido Ciocco, después se
@@ -44,7 +44,7 @@
           aportar sus conocimientos para la resolución de problemáticas
           de diseño.
         </h3>
-        <a href="" class="cta">Conoce nuestros productos</a>
+        <a href="#prod" class="cta">Conoce nuestros productos</a>
       </div>
       
         <img src="./imagenes/logoking.png" class="ilustracion1" alt="" />
@@ -68,7 +68,7 @@
     <!-- Fin de carrito -->
 
     <!-- Comienzo de segunda seccion -->
-    <section class="contenedor-shop">
+    <section class="contenedor-shop"><a href="" id="prod"></a>
         <h2 class="titulo-shop">PRODUCTOS</h2>
         <div class="contenido-shop">
             <div class="caja-producto">
@@ -106,7 +106,7 @@
         <h3 class="subtitulo2">
           No te preocupes! Ponete en contacto con nosotros y contanos tu idea para poder hacerla realidad!
         </h3>
-        <a href="" class="cta2">Contanos tu idea</a>
+        <a href="https://www.instagram.com/king.prints3d/?hl=es-la" target="_blank"  class="cta2">Contanos tu idea</a>
       </div>
      
     </section>
@@ -114,12 +114,12 @@
     <footer class="footer">
       <img src="./imagenes/logoking.png" class="imagen_footer" alt="">
       <div class="redes">
-      <a href="" class="iconosRedes"></a>        
+      <a href="https://www.instagram.com/king.prints3d/?hl=es-la" target="_blank" class="iconosRedes"></a>        
       <a href="" class="iconosRedes"></a>  
-      <a href="" class="iconosRedes"></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="iconosRedes"></a>
       </div>
       <ul class="menuFooter">
-        <li class="itemMenu">Inicio</li>
+        <li class="itemMenu"><a href="#nosotros" id="linkFooter">Inicio</a></li>
         <li class="itemMenu">Envios</li>
         <li class="itemMenu">Reembolsos</li>
         <li class="itemMenu">Legal</li>

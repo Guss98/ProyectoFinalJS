@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-image: url(./imagenes/pexels-adrien-olichon-2387532.jpg);
   background-size: cover;
   background-repeat:no-repeat;
   background-attachment: fixed;
-  scroll-behavior: smooth;
 
 }
 
@@ -493,6 +496,15 @@ margin: 1rem;
   font-size: 1.125rem;
 }
 
+#linkFooter {
+  opacity: 2;
+  color: black;
+}
+
+#linkFooter:hover {
+  opacity: 1;
+}
+
 .itemMenu{
   margin: 1rem 1.5rem;
   cursor: pointer;
@@ -502,6 +514,7 @@ margin: 1rem;
 .itemMenu:hover{
   opacity: 1;
 }
+
 
 .copyright{
   color: black;
@@ -673,3 +686,54 @@ margin: 1rem;
 
 }
 
+/* Estilos del div Creado */
+
+#divCreado {
+  display: none;
+  position: absolute;
+  top: 66px;
+  height: 80%;
+  width: 100%;
+  z-index: 999;
+  padding: 4rem 0px 3rem;
+  background: rgba(0, 0, 0, 0.8);
+  
+}
+
+#divCont {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+#divImg{
+  width: 350px;
+  height: 350px;
+  
+}
+
+#info{
+  width: 350px;
+  padding: 10px;
+  position: relative;
+  border: 1px solid white;
+}
+
+#divText {
+  width: 350px;
+}
+
+#title{
+  color: white;
+}
+
+#precioCreado{
+  color: white;
+  font-weight: bold;
+}
+
+#fotoCreada {
+  width: 350px;
+  height: 350px;
+}
