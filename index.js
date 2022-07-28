@@ -29,10 +29,14 @@ let productos = [
 //Abrir y cerrar nav responsive
 
 function abrirCerrarNavbar () {
+    let botonLista = document.getElementById('nav__item');
     let lista = document.getElementById('lista');
     iconoNavbar.onclick = () => {
         lista.classList.toggle('show'); 
     };
+    botonLista.onclick = () => {
+        lista.classList.toggle('show');
+    }
     
 };
 
